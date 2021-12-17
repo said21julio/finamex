@@ -2,10 +2,10 @@
 
 Este proyecto fue creado con 
 
-•	[Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
-•	FakeStore: https://fakestoreapi.com/
-•	Sweet alert: https://sweetalert2.github.io/
-•	Bulma: https://bulma.io/
+* [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+* FakeStore: https://fakestoreapi.com/
+* Sweet alert: https://sweetalert2.github.io/
+* Bulma: https://bulma.io/
 
 ## Requerimientos previos
 

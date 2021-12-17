@@ -1,0 +1,18 @@
+
+
+.searcher {
+    margin-bottom: 30px;
+}
+
+.searcher .searcherF {
+    display: inline-block;
+    width: 90% !important;
+}
+
+.searcher .searcherS {
+    display: inline-block;
+    width: 9% !important;
+}
+.searcher .searcherS button{
+    width: 95% ;
+}

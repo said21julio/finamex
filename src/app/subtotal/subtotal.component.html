@@ -1,7 +1,8 @@
 <section class="columns checkout">
+    <div class="column is-four-fifths"></div>
     <div class="column submit-form">
         <div id="total">
-            <span class="total">Total ${{ subtotal}} </span>
+            <span class="total">Subotal ${{ subtotal}} </span>
         </div>
         <div class="field is-grouped">
             <p class="control">
@@ -11,9 +12,10 @@
     </div>
 </section>
 
-<div>
-    <div #termsConditions style="visibility: hidden;">
-        <input type="checkbox" />
-        <p><a href="https://www.macroplastics.com/images/docs/Terminos-y-Condiciones-de-Venta.pdf">Terminos y condiciones</a></p>
-    </div>
-</div>
+
+
+<label #termsConditions class="checkbox" style="visibility: hidden;">
+    <input type="checkbox">
+    I agree to the <a href="https://www.macroplastics.com/images/docs/Terminos-y-Condiciones-de-Venta.pdf">terms and conditions</a>
+</label>
+

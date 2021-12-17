@@ -105,27 +105,19 @@ export class ProductsComponent implements OnInit {
   public showDetailItem(item: Product): void {
     this.productService.getOneProduct(item.id).subscribe((item: Product) => {
       this.currentToShowItem = item;
-      let htmlCode = '<div class="columns product-row">';
-      htmlCode += '<div class="column product-image">';
+      let htmlCode = '<div style="text-align:left">';
+      htmlCode += '<div class="column is-one-third product-image">';
       htmlCode += '<img src="' + item.image + '">';
       htmlCode += '</div>';
-      htmlCode += '<div class="column is-half product-title">';
-      htmlCode += '<h2>' + item.title + '</h2>';
-      htmlCode += '<h3>Disponibles:' + item.rating.count + '</h3>';
-      htmlCode += '<h3>Rate:' + item.rating.rate + '</h3>';
-      htmlCode += '<h3>Categoria:' + item.category + '</h3>';
+      htmlCode += '<div class="column product-title">';
+      htmlCode += '<h1>' + item.title + '</h1>';
+      htmlCode += '<p><b>Available: </b>' + item.rating.count + '</p>';
+      htmlCode += '<h3><b>Rate:</b> ' + item.rating.rate + '</h3>';
+      htmlCode += '<h3><b>Categoria:</b> ' + item.category + '</h3>';
       htmlCode += '<h3>' + item.description + '</h3>';
       htmlCode += '</div>';
-      htmlCode += '<div class="column center-container">';
-      htmlCode += '<span class="mobile-table-heading"> Cantidad</span>';
-      htmlCode += '<input class="quantity" type="number" name="quantity" min="1" max="100"';
-      htmlCode += '  [value]="currentToShowItem.quantity">';
-      htmlCode += '</div>';
-      htmlCode += '<div class="column center-container">';
-      htmlCode += '<span class="mobile-table-heading"> Precio</span> $' + item.price;
-      htmlCode += '</div>';
-      htmlCode += '<div class="column center-container">';
-      htmlCode += '<span class="mobile-table-heading"> Total</span> $' + item.price * item.quantity;
+      htmlCode += '<div class="column">';
+      htmlCode += '<span> <b>Precio</b></span> $' + item.price;
       htmlCode += '</div>';
       htmlCode += '</div>';
       Swal.fire('', htmlCode);

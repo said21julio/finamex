@@ -1,0 +1,23 @@
+
+
+
+.container-fluid{
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(45deg, #0E10FF, #47DBF8);
+    background: -moz-linear-gradient(45deg, #0E10FF 40%, #47DBF8 100%);
+    background: -webkit-linear-gradient(45deg, #0E10FF 40%, #47DBF8 100%);
+}
+
+.container-fluid h1{
+    text-align: center;
+    width: 100%;
+    color: bisque;
+    font-size: 200px;
+    padding-top: 100px;
+}
+
+.container-fluid p{ 
+    color: bisque;
+    font-size: xx-large;
+}

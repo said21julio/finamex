@@ -26,11 +26,11 @@
                 <div>
                     <!-- Items -->
                     <div class="columns product-row notification is-light" *ngFor="let item of currentItems" >
-                        <div class="column product-image" (click)="showDetailItem(item)">
+                        <div class="column product-image selectedtag" (click)="showDetailItem(item)">
                             <img src="{{item.image}}">
                         </div>
-                        <div class="column is-half product-title">
-                            <h2 (click)="showDetailItem(item)">{{item.title}}</h2>
+                        <div class="column is-half product-title ">
+                            <h2 class="selectedtag" (click)="showDetailItem(item)">{{item.title}}</h2>
                             <h3><b>Available:</b> {{ item.rating.count }}</h3>
                         </div>
                         <div class="column center-container">

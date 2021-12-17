@@ -16,3 +16,7 @@
 .searcher .searcherS button{
     width: 95% ;
 }
+
+.selectedtag {
+    cursor: pointer;
+}

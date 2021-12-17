@@ -1,27 +1,39 @@
 <div class="content" role="main">
-
-<!--
-    <button [swal]="['Oops!', 'This is not implemented yet :/', 'warning']">
-      Do it!
-    </button>
-    
-   asd
-  
-  
-   <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        Card header
-      </p>
-      <button class="card-header-icon" aria-label="more options">
-        <span class="icon">
-          <i class="fas fa-angle-down" aria-hidden="true"></i>
-        </span>
-      </button>
-    </header>
-  </div>
-  -->
-
-  {{ products}}
-  
-  </div>
+    <div class="container">
+        <section class="section products-table">
+            <div class="columns table-header">
+                <h1>Shopping Cart</h1>
+            </div>
+            <div> 
+                <input type="text" (change)="searchItem($event)"  />
+                <button (click)="clearSearch()">X</button>
+            </div>
+            <div id="shopping_cart">
+                <div>
+                    <!-- Items -->
+                    <div class="columns product-row" *ngFor="let item of currentItems" >
+                        <div class="column product-image" (click)="showDetailItem(item)">
+                            <img src="{{item.image}}">
+                        </div>
+                        <div class="column is-half product-title">
+                            <h2 (click)="showDetailItem(item)">{{item.title}}</h2>
+                            <h3>Disponibles:{{ item.rating.count }}</h3>
+                        </div>
+                        <div class="column center-container">
+                            <span class="mobile-table-heading"> Cantidad</span>
+                            <input class="quantity" type="number" name="quantity" min="1" max="100"
+                                [value]="item.quantity" (change)="updateItem(item, $event)">
+                        </div>
+                        <div class="column center-container">
+                            <span class="mobile-table-heading"> Precio</span> ${{item.price}}
+                        </div>
+                        <div class="column center-container">
+                            <span class="mobile-table-heading"> Total</span> ${{  item.quantity*item.price }}
+                        </div>
+                    </div>
+                    <app-subtotal [subtotal]="subtotal"></app-subtotal>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

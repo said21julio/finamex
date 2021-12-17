@@ -1,0 +1,19 @@
+<section class="columns checkout">
+    <div class="column submit-form">
+        <div id="total">
+            <span class="total">Total ${{ subtotal}} </span>
+        </div>
+        <div class="field is-grouped">
+            <p class="control">
+                <button  class="button is-link" href="#" (click)="checkout()">Checkout</button>
+            </p>
+        </div>
+    </div>
+</section>
+
+<div>
+    <div #termsConditions style="visibility: hidden;">
+        <input type="checkbox" />
+        <p><a href="https://www.macroplastics.com/images/docs/Terminos-y-Condiciones-de-Venta.pdf">Terminos y condiciones</a></p>
+    </div>
+</div>

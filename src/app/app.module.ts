@@ -9,12 +9,14 @@ import { ProductsComponent } from './products/products.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { SubtotalComponent } from './subtotal/subtotal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SubtotalComponent
   ],
   imports: [
     BrowserModule,

@@ -1,27 +1,26 @@
-# Finamex
+# Examen Finamex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+Este proyecto fue creado con 
 
-## Development server
+•	[Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+•	FakeStore: https://fakestoreapi.com/
+•	Sweet alert: https://sweetalert2.github.io/
+•	Bulma: https://bulma.io/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requerimientos previos
 
-## Code scaffolding
+Nodejs (se recomienda v16.13.1)
+NPM
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalación
 
-## Build
+Ejecutar el comando npm install 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Ejecutar en desarrollo
 
-## Running unit tests
+Correr el comando `ng serve` para un entorno de desarrollo. Navegar a la url `http://localhost:4200/`. asegurarse que no este ocupado el puerto 4200.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Compilar
 
-## Running end-to-end tests
+Correr el comando `ng build` para compilar el proyecto. El compilado se almacenará en el directorio`dist/`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
